@@ -61,6 +61,9 @@
     },
     "shared": {
       "tags": ["shared"]
+    },
+    "ui-webcomponents": {
+      "tags": []
     }
   }
 }

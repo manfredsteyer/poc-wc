@@ -13,5 +13,6 @@ module.exports = {
     '<rootDir>/libs/ngrx-router',
     '<rootDir>/libs/settings',
     '<rootDir>/libs/shared',
+    '<rootDir>/libs/ui/webcomponents',
   ],
 };
