@@ -9,27 +9,16 @@ import { ProfileModule } from './../../../../profile/src/lib/profile.module';
 import { createCustomElement } from '@angular/elements';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  entryComponents: [
-    ProfileModule,
-    NgrxErrorModule,
-    NgrxFormsModule
-  ],
-
+  imports: [CommonModule],
+  entryComponents: [ProfileModule, NgrxErrorModule, NgrxFormsModule],
 })
 export class UiWebcomponentsModule implements DoBootstrap {
-  constructor(private injector: Injector) {
-  }
-
+  constructor(private injector: Injector) {}
 
   ngDoBootstrap(appRef: ApplicationRef): void {
-    const profiles = createCustomElement(ProfileArticlesComponent, {injector: this.injector});
-    const dynamicform = createCustomElement(DynamicFormComponent, {injector: this.injector});
+    const profiles = createCustomElement(ProfileArticlesComponent, { injector: this.injector });
+    const dynamicform = createCustomElement(DynamicFormComponent, { injector: this.injector });
     customElements.define('dynamic-form', profiles);
     customElements.define('profiles', dynamicform);
-
   }
-
 }
