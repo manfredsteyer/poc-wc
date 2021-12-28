@@ -64,6 +64,13 @@
     },
     "ui-webcomponents": {
       "tags": []
+    },
+    "my-wc-app": {
+      "tags": []
+    },
+    "my-wc-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["my-wc-app"]
     }
   }
 }

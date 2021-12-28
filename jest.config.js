@@ -14,5 +14,6 @@ module.exports = {
     '<rootDir>/libs/settings',
     '<rootDir>/libs/shared',
     '<rootDir>/libs/ui/webcomponents',
+    '<rootDir>/apps/my-wc-app',
   ],
 };

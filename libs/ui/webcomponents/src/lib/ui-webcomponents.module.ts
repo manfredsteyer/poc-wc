@@ -7,10 +7,14 @@ import { NgrxFormsModule } from '@angular-ngrx-nx-realworld-example-app/ngrx-for
 import { ProfileArticlesComponent } from './../../../../profile/src/lib/profile-articles.component';
 import { ProfileModule } from './../../../../profile/src/lib/profile.module';
 import { createCustomElement } from '@angular/elements';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   imports: [CommonModule],
   entryComponents: [ProfileModule, NgrxErrorModule, NgrxFormsModule],
+  declarations: [
+    DummyComponent
+  ],
 })
 export class UiWebcomponentsModule implements DoBootstrap {
   constructor(private injector: Injector) {}
